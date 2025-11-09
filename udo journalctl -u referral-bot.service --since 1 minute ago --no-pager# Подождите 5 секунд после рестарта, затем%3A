@@ -1,0 +1,157 @@
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,704 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,704 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,706 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:42:02 bljhupaepg python[607334]: FROM users
+Sep 07 12:42:02 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,706 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:42:02 bljhupaepg python[607334]: FROM users
+Sep 07 12:42:02 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,706 INFO sqlalchemy.engine.Engine [cached since 3.639e+05s ago] (235794091,)
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,706 - sqlalchemy.engine.Engine - INFO - [cached since 3.639e+05s ago] (235794091,)
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,709 - app.middlewares.onboarding_check - DEBUG - User 235794091 (@A9881215) onboarding stage: completed
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,710 INFO sqlalchemy.engine.Engine ROLLBACK
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,710 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,711 - app.middlewares.logging - INFO - User 235794091 (@A9881215) sent: /start ref_87E363
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,712 - app.handlers.onboarding - INFO - 🎯 Onboarding: User 235794091 at stage completed sent: /start ref_87E363...
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,712 - app.handlers.onboarding.universal_start - INFO - 🔥 UNIVERSAL START HANDLER TRIGGERED!
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,712 - app.handlers.onboarding.universal_start - INFO -    user_id: 235794091
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,712 - app.handlers.onboarding.universal_start - INFO -    username: @A9881215
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,712 - app.handlers.onboarding.universal_start - INFO -    full_name: Арслан
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,712 - app.handlers.onboarding.universal_start - INFO -    command: /start ref_87E363
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,712 - app.handlers.onboarding.universal_start - INFO - 📊 Opening database session...
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,712 - app.handlers.onboarding.universal_start - INFO - 🔍 Searching for user 235794091 in database...
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,713 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,713 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,714 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:42:02 bljhupaepg python[607334]: FROM users
+Sep 07 12:42:02 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,714 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:42:02 bljhupaepg python[607334]: FROM users
+Sep 07 12:42:02 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,714 INFO sqlalchemy.engine.Engine [cached since 3.639e+05s ago] (235794091,)
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,714 - sqlalchemy.engine.Engine - INFO - [cached since 3.639e+05s ago] (235794091,)
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,716 - app.handlers.onboarding.universal_start - INFO - 👤 Found existing user 235794091
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,716 - app.handlers.onboarding.universal_start - INFO -    user.id: 11674
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,716 - app.handlers.onboarding.universal_start - INFO -    user.onboarding_stage: completed
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,716 - app.handlers.onboarding.universal_start - INFO -    user.ref_code: ref_87E363
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,716 - app.handlers.onboarding.universal_start - INFO - 🎯 User 235794091 is at stage: completed
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,716 - app.handlers.onboarding.universal_start - INFO - 🎛️ Showing main menu for completed user 235794091
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,716 - app.handlers.onboarding.universal_start - INFO - 🎛️ show_main_menu called for completed user 235794091
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,717 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,717 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,718 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:42:02 bljhupaepg python[607334]: FROM users
+Sep 07 12:42:02 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,718 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:42:02 bljhupaepg python[607334]: FROM users
+Sep 07 12:42:02 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,718 INFO sqlalchemy.engine.Engine [cached since 3.639e+05s ago] (235794091,)
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,718 - sqlalchemy.engine.Engine - INFO - [cached since 3.639e+05s ago] (235794091,)
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,719 INFO sqlalchemy.engine.Engine ROLLBACK
+Sep 07 12:42:02 bljhupaepg python[607334]: 2025-09-07 12:42:02,719 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+Sep 07 12:42:03 bljhupaepg python[607334]: 2025-09-07 12:42:03,048 - app.handlers.onboarding.universal_start - INFO - ✅ Main menu sent
+Sep 07 12:42:03 bljhupaepg python[607334]: 2025-09-07 12:42:03,048 INFO sqlalchemy.engine.Engine ROLLBACK
+Sep 07 12:42:03 bljhupaepg python[607334]: 2025-09-07 12:42:03,048 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,450 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,450 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,450 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:43:59 bljhupaepg python[607334]: FROM users
+Sep 07 12:43:59 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,450 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:43:59 bljhupaepg python[607334]: FROM users
+Sep 07 12:43:59 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,450 INFO sqlalchemy.engine.Engine [cached since 3.64e+05s ago] (1800195979,)
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,450 - sqlalchemy.engine.Engine - INFO - [cached since 3.64e+05s ago] (1800195979,)
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,452 - app.middlewares.onboarding_check - DEBUG - User 1800195979 (@IS_LAM_0) onboarding stage: want_join
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,452 INFO sqlalchemy.engine.Engine ROLLBACK
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,452 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,453 - app.handlers.onboarding - INFO - 🎯 Onboarding: User 1800195979 at stage want_join clicked: send_video_guide
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,453 - app.handlers.onboarding.payment - INFO - User 1800195979 clicked 'ХОЧУ В КОМАНДУ!' from PDF
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,454 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,454 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,454 INFO sqlalchemy.engine.Engine UPDATE users SET onboarding_stage=$1::VARCHAR WHERE users.telegram_id = $2::BIGINT
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,454 - sqlalchemy.engine.Engine - INFO - UPDATE users SET onboarding_stage=$1::VARCHAR WHERE users.telegram_id = $2::BIGINT
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,454 INFO sqlalchemy.engine.Engine [cached since 3.64e+05s ago] (<OnboardingStage.PARTNER_LESSON: 'partner_lesson'>, 1800195979)
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,454 - sqlalchemy.engine.Engine - INFO - [cached since 3.64e+05s ago] (<OnboardingStage.PARTNER_LESSON: 'partner_lesson'>, 1800195979)
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,455 INFO sqlalchemy.engine.Engine COMMIT
+Sep 07 12:43:59 bljhupaepg python[607334]: 2025-09-07 12:43:59,455 - sqlalchemy.engine.Engine - INFO - COMMIT
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,142 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,142 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,143 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:44:06 bljhupaepg python[607334]: FROM users
+Sep 07 12:44:06 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,143 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:44:06 bljhupaepg python[607334]: FROM users
+Sep 07 12:44:06 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,143 INFO sqlalchemy.engine.Engine [cached since 3.641e+05s ago] (1800195979,)
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,143 - sqlalchemy.engine.Engine - INFO - [cached since 3.641e+05s ago] (1800195979,)
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,145 - app.middlewares.onboarding_check - DEBUG - User 1800195979 (@IS_LAM_0) onboarding stage: partner_lesson
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,145 INFO sqlalchemy.engine.Engine ROLLBACK
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,145 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,145 - app.handlers.onboarding - INFO - 🎯 Onboarding: User 1800195979 at stage partner_lesson clicked: show_referral_link
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,146 - app.handlers.onboarding.payment - INFO - User 1800195979 requesting referral link
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,146 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,146 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,147 INFO sqlalchemy.engine.Engine UPDATE users SET onboarding_stage=$1::VARCHAR WHERE users.telegram_id = $2::BIGINT
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,147 - sqlalchemy.engine.Engine - INFO - UPDATE users SET onboarding_stage=$1::VARCHAR WHERE users.telegram_id = $2::BIGINT
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,147 INFO sqlalchemy.engine.Engine [cached since 3.641e+05s ago] (<OnboardingStage.GOT_LINK: 'got_link'>, 1800195979)
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,147 - sqlalchemy.engine.Engine - INFO - [cached since 3.641e+05s ago] (<OnboardingStage.GOT_LINK: 'got_link'>, 1800195979)
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,148 INFO sqlalchemy.engine.Engine COMMIT
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,148 - sqlalchemy.engine.Engine - INFO - COMMIT
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,149 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,149 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,149 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:44:06 bljhupaepg python[607334]: FROM users
+Sep 07 12:44:06 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,149 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:44:06 bljhupaepg python[607334]: FROM users
+Sep 07 12:44:06 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,149 INFO sqlalchemy.engine.Engine [cached since 3.641e+05s ago] (1800195979,)
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,149 - sqlalchemy.engine.Engine - INFO - [cached since 3.641e+05s ago] (1800195979,)
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,150 INFO sqlalchemy.engine.Engine ROLLBACK
+Sep 07 12:44:06 bljhupaepg python[607334]: 2025-09-07 12:44:06,150 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,799 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,799 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,799 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:44:30 bljhupaepg python[607334]: FROM users
+Sep 07 12:44:30 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,799 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:44:30 bljhupaepg python[607334]: FROM users
+Sep 07 12:44:30 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,799 INFO sqlalchemy.engine.Engine [cached since 3.641e+05s ago] (1800195979,)
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,799 - sqlalchemy.engine.Engine - INFO - [cached since 3.641e+05s ago] (1800195979,)
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,801 - app.middlewares.onboarding_check - DEBUG - User 1800195979 (@IS_LAM_0) onboarding stage: got_link
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,801 INFO sqlalchemy.engine.Engine ROLLBACK
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,801 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,801 - app.handlers.onboarding - INFO - 🎯 Onboarding: User 1800195979 at stage got_link clicked: show_referral_link
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,801 - app.handlers.onboarding.payment - INFO - User 1800195979 requesting referral link
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,802 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,802 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,802 INFO sqlalchemy.engine.Engine UPDATE users SET onboarding_stage=$1::VARCHAR WHERE users.telegram_id = $2::BIGINT
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,802 - sqlalchemy.engine.Engine - INFO - UPDATE users SET onboarding_stage=$1::VARCHAR WHERE users.telegram_id = $2::BIGINT
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,803 INFO sqlalchemy.engine.Engine [cached since 3.641e+05s ago] (<OnboardingStage.GOT_LINK: 'got_link'>, 1800195979)
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,803 - sqlalchemy.engine.Engine - INFO - [cached since 3.641e+05s ago] (<OnboardingStage.GOT_LINK: 'got_link'>, 1800195979)
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,804 INFO sqlalchemy.engine.Engine COMMIT
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,804 - sqlalchemy.engine.Engine - INFO - COMMIT
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,806 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,806 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,807 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:44:30 bljhupaepg python[607334]: FROM users
+Sep 07 12:44:30 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,807 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:44:30 bljhupaepg python[607334]: FROM users
+Sep 07 12:44:30 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,807 INFO sqlalchemy.engine.Engine [cached since 3.641e+05s ago] (1800195979,)
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,807 - sqlalchemy.engine.Engine - INFO - [cached since 3.641e+05s ago] (1800195979,)
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,809 INFO sqlalchemy.engine.Engine ROLLBACK
+Sep 07 12:44:30 bljhupaepg python[607334]: 2025-09-07 12:44:30,809 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+Sep 07 12:44:45 bljhupaepg python[607334]: 2025-09-07 12:44:45,412 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+Sep 07 12:44:45 bljhupaepg python[607334]: 2025-09-07 12:44:45,412 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+Sep 07 12:44:45 bljhupaepg python[607334]: 2025-09-07 12:44:45,412 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:44:45 bljhupaepg python[607334]: FROM users
+Sep 07 12:44:45 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:44:45 bljhupaepg python[607334]: 2025-09-07 12:44:45,412 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.username, users.full_name, users.ref_code, users.referred_by, users.email, users.phone, users.status, users.created_at, users.onboarding_stage, users.payment_completed, users.current_course_step, users.course_completed_at, users.partner_offer_shown_at, users.onboarding_completed_at, users.gender
+Sep 07 12:44:45 bljhupaepg python[607334]: FROM users
+Sep 07 12:44:45 bljhupaepg python[607334]: WHERE users.telegram_id = $1::BIGINT
+Sep 07 12:44:45 bljhupaepg python[607334]: 2025-09-07 12:44:45,413 INFO sqlalchemy.engine.Engine [cached since 3.641e+05s ago] (1800195979,)
+Sep 07 12:44:45 bljhupaepg python[607334]: 2025-09-07 12:44:45,413 - sqlalchemy.engine.Engine 

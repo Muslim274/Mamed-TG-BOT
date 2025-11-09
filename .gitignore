@@ -1,0 +1,60 @@
+# Environment variables
+.env
+*.env
+new_video_ids.env
+
+# Credentials and secrets
+client_secret_*.json
+sale-bot*.json
+token.json
+credentials/
+
+# Database
+*.db
+*.sql
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Logs
+*.log
+logs/
+backup.log
+bot_logs.txt
+cron_analytics.log
+
+# Backups
+backups/
+data_backup.json
+backup_*.sql
+
+# Videos (usually too large for git)
+*.mp4
+*.MP4
+
+# Temporary files
+temp_videos/
+
+# QR crypto files
+qr-crypto/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Batch files
+*.bat
+nul

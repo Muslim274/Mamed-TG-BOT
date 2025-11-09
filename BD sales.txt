@@ -1,0 +1,73 @@
+id,ref_code,full_name,username,amount,commission_percent,commission_amount,status,customer_email,product,created_at
+173,ref_24208D,Abdullah,no_username,4700.0,50.0,2350.0,confirmed,user_1338456728,Onboarding Course (GetCourse),2025-11-05 19:18:10.865949+00:00
+172,ref_A37ED3,مسافر 🏔️,halalIlia,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course (Robokassa Auto),2025-11-05 12:39:23.510181+00:00
+171,ref_2AF9C3,Нурсултан Кенжетаев,KenzhetayevN,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course (Robokassa Auto),2025-11-04 16:13:41.223889+00:00
+170,ref_C509A5,ANDRADE GONZALEZ LÓPEZ,gonzoilopez,4700.0,50.0,2350.0,confirmed,Bakinec6666,Onboarding Course (Robokassa Auto),2025-11-04 12:15:27.377550+00:00
+169,ref_A37ED3,مسافر 🏔️,halalIlia,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course (Robokassa Auto),2025-11-04 10:33:00.609348+00:00
+168,ref_A37ED3,مسافر 🏔️,halalIlia,4700.0,50.0,2350.0,confirmed,mlsgsultan,Onboarding Course (Robokassa Auto),2025-11-03 20:37:39.952218+00:00
+166,ref_AE7081,Ильсаф Туйгильдин,IlsafTuygildin,4700.0,50.0,2350.0,confirmed,user_888034864,Onboarding Course (GetCourse),2025-11-02 18:03:53.431209+00:00
+165,ref_B8FECD,Ekaterina Nepomnyashikh,KaterinaNep,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course (Robokassa Auto),2025-11-02 13:43:18.503496+00:00
+162,ref_24843F,Rednaks⚔️,x777am102,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course (Robokassa Auto),2025-10-31 14:58:00.143359+00:00
+161,ref_A37ED3,مسافر 🏔️,halalIlia,4700.0,50.0,2350.0,confirmed,Indira250178,Onboarding Course (Robokassa Auto),2025-10-31 13:11:55.905965+00:00
+160,ref_1D35E8,Камиль,no_username,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course (Robokassa Auto),2025-10-31 04:47:42.411905+00:00
+159,ref_A8063E,...,no_username,4700.0,50.0,2350.0,confirmed,ptashka0810,Onboarding Course (Robokassa Auto),2025-10-30 21:07:43.332277+00:00
+158,ref_324AD6,-,no_username,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course (Robokassa Auto),2025-10-30 19:59:04.615118+00:00
+157,ref_26F229,Conquerer,mm76ko,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course (Robokassa Auto),2025-10-29 18:26:27.230439+00:00
+156,ref_DBDEAE,Эмиль,no_username,4700.0,50.0,2350.0,confirmed,azamat_s01,Onboarding Course (Robokassa Auto),2025-10-29 16:26:47.023999+00:00
+155,ref_AE7081,Ильсаф Туйгильдин,IlsafTuygildin,4700.0,50.0,2350.0,confirmed,fanil_15,Onboarding Course (Robokassa Auto),2025-10-29 15:27:07.671669+00:00
+148,ref_5BCBB4,Svoy,SvoyTu,4700.0,50.0,2350.0,confirmed,geniustmr,Onboarding Course (Robokassa Auto),2025-10-29 12:18:44.583556+00:00
+138,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-10-28 19:56:56.361563+00:00
+134,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-10-28 15:33:29.003706+00:00
+133,ref_5AC97E,Ramil,AbuMuxammd,4700.0,50.0,2350.0,confirmed,user_301994932,Onboarding Course (GetCourse),2025-10-28 11:20:43.726775+00:00
+132,ref_74E3DE,Дания,skandinavieNs,4700.0,50.0,2350.0,confirmed,Arslanbrat,Onboarding Course (Robokassa Auto),2025-10-28 08:11:44.859840+00:00
+131,ref_5BCBB4,Svoy,SvoyTu,4700.0,50.0,2350.0,confirmed,bilkrint,Onboarding Course (Robokassa Auto),2025-10-28 07:45:36.128017+00:00
+130,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-10-27 23:29:42.827363+00:00
+127,ref_FB6E69,S,r3dl31,4700.0,50.0,2350.0,confirmed,habil_1313,Onboarding Course (Robokassa Auto),2025-10-23 08:14:51.685549+00:00
+126,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-10-22 15:00:21.261881+00:00
+124,ref_B8FECD,Ekaterina Nepomnyashikh,KaterinaNep,4700.0,50.0,2350.0,confirmed,Maryamjelii,Onboarding Course (Robokassa Auto),2025-10-19 18:08:47.979015+00:00
+122,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-10-18 01:52:09.148909+00:00
+121,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-10-18 01:42:38.776824+00:00
+112,ref_69CCB3,Adil,no_username,4700.0,50.0,2350.0,confirmed,user_1830164486,Onboarding Course (GetCourse),2025-10-11 05:25:29.962675+00:00
+110,ref_D8605B,Елена,ElenaMustafaeva1985,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course (Robokassa Auto),2025-10-06 07:39:32.983246+00:00
+108,ref_75B580,Damir Sarvarov,Damir0248,4700.0,50.0,2350.0,confirmed,khamzabak,Onboarding Course (Robokassa Auto),2025-10-02 19:42:17.229456+00:00
+105,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,emilgadzhiev,Onboarding Course (Robokassa Auto),2025-09-24 04:20:37.026900+00:00
+103,ref_308C57,mari_fri,mariom02,4700.0,50.0,2350.0,confirmed,user_172094637,Onboarding Course (GetCourse),2025-09-23 07:21:45.212757+00:00
+102,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-21 12:59:21.324673+00:00
+101,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-21 12:45:00.682379+00:00
+100,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-21 12:29:38.293605+00:00
+99,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-21 12:16:05.570656+00:00
+98,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-21 02:05:10.026744+00:00
+97,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-21 02:02:29.722306+00:00
+96,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-21 02:00:08.640581+00:00
+95,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-21 01:54:29.324107+00:00
+94,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-21 01:42:58.961465+00:00
+93,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-21 01:31:56.760139+00:00
+92,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-21 01:26:43.393599+00:00
+91,ref_FD0AFB,Альфа персон,alfaperson42,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course (Robokassa Auto),2025-09-20 08:43:07.595921+00:00
+88,ref_1B54A5,АМИР АМРАХОВ,amir_amrahov_sw,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course (Robokassa Auto),2025-09-17 21:56:24.821680+00:00
+87,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-16 23:58:55.728008+00:00
+86,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-16 01:32:18.399189+00:00
+85,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-16 01:24:29.715264+00:00
+79,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course (Robokassa Auto),2025-09-12 09:07:53.843936+00:00
+76,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-11 02:06:07.513876+00:00
+74,ref_49C901,Муслим,Jobirov2302,4700.0,50.0,2350.0,confirmed,eliel705,Onboarding Course,2025-09-09 20:19:16.658968+00:00
+72,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,user_8181794729,Onboarding Course (GetCourse),2025-09-07 23:54:17.651755+00:00
+71,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course (GetCourse),2025-09-04 02:01:22.516740+00:00
+70,ref_A83575,Farid Farkhadov,FFarkhadov,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course,2025-09-03 21:28:27.942206+00:00
+68,ref_3C1056,إبراهيم,no_username,4700.0,50.0,2350.0,confirmed,arturzul1,Onboarding Course,2025-09-03 01:03:13.453794+00:00
+65,ref_5F0553,أبو إسماعيل,no_username,4700.0,50.0,2350.0,confirmed,zali_kli_777,Onboarding Course,2025-08-30 16:45:58.432007+00:00
+64,ref_0D5761,R.F,no_username,4700.0,50.0,2350.0,confirmed,KenzhetayevN,Onboarding Course (GetCourse),2025-08-29 19:08:53.512461+00:00
+63,ref_005220,Мурад,TsMurad,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course,2025-08-29 17:35:23.387015+00:00
+59,ref_5F0553,أبو إسماعيل,no_username,4700.0,50.0,2350.0,confirmed,Shamilkari,Onboarding Course,2025-08-21 03:34:30.185528+00:00
+54,ref_1B54A5,АМИР АМРАХОВ,amir_amrahov_sw,4700.0,50.0,2350.0,confirmed,alishka2906,Onboarding Course,2025-08-18 17:18:41.814073+00:00
+52,ref_99F646,Kaya,abual14,4700.0,50.0,2350.0,confirmed,UmmAli1111,Onboarding Course,2025-08-17 07:49:03.007236+00:00
+51,ref_405679,Ильнар,Abuhaniyfa,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course,2025-08-17 07:17:19.254785+00:00
+47,ref_1B54A5,АМИР АМРАХОВ,amir_amrahov_sw,4700.0,50.0,2350.0,confirmed,Abu_abi002,Onboarding Course,2025-08-16 09:06:51.022821+00:00
+41,ref_308C57,mari_fri,mariom02,4700.0,50.0,2350.0,confirmed,doc_juraeva,Onboarding Course (GetCourse),2025-08-14 17:01:08.077982+00:00
+37,ref_308C57,mari_fri,mariom02,4700.0,50.0,2350.0,confirmed,doc_juraeva,Onboarding Course (GetCourse),2025-08-14 06:04:39.387861+00:00
+29,ref_CD4060,Alan Kairov,Kair1998,4700.0,20.0,940.0,confirmed,no_username,Onboarding Course,2025-08-13 10:41:42.941577+00:00
+26,ref_2A2680,Адиль,Adee_Art_In,4700.0,50.0,2350.0,confirmed,no_username,Onboarding Course,2025-08-11 19:11:39.038271+00:00
+23,ref_5F0553,أبو إسماعيل,no_username,4700.0,20.0,940.0,confirmed,funduk33,Onboarding Course,2025-08-09 21:24:41.817241+00:00
+22,ref_B8FB85,Джульетта Алихановна,no_username,4700.0,20.0,940.0,confirmed,no_username,Onboarding Course,2025-08-08 17:21:00.513252+00:00
+14,ref_308C57,mari_fri,mariom02,4700.0,20.0,940.0,confirmed,no_username,Onboarding Course,2025-08-04 19:06:49.741721+00:00
+12,ref_308C57,mari_fri,mariom02,4700.0,20.0,940.0,confirmed,Leylavahida,Onboarding Course,2025-08-04 18:05:12.219285+00:00

@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: referral_postgres
+    environment:
+      POSTGRES_DB: referral_bot
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    
+  redis:
+    image: redis:7-alpine
+    container_name: referral_redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+    
+  bot:
+    build: .
+    container_name: referral_bot
+    env_file: .env
+    depends_on:
+      - postgres
+      - redis
+    volumes:
+      - ./logs:/app/logs
+      - ./backups:/app/backups
+    restart: unless-stopped
+    
+  web:
+    build: .
+    container_name: referral_web
+    command: uvicorn app.web.app:app --host 0.0.0.0 --port 8000
+    env_file: .env
+    depends_on:
+      - postgres
+      - redis
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

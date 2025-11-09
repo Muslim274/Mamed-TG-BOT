@@ -1,0 +1,11 @@
+[0;1;32m●[0m referral-bot-api.service - Referral Bot FastAPI
+     Loaded: loaded (]8;;file://bljhupaepg/etc/systemd/system/referral-bot-api.service/etc/systemd/system/referral-bot-api.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Thu 2025-07-17 21:54:43 UTC; 37ms ago
+   Main PID: 77427 (uvicorn)
+      Tasks: 1 (limit: 1110)
+     Memory: 612.0K (peak: 756.0K)
+        CPU: 4ms
+     CGroup: /system.slice/referral-bot-api.service
+             └─[0;38;5;245m77427 /root/telegram-referral-bot/venv/bin/python3.12 /root/telegram-referral-bot/venv/bin/uvicorn app.web.app:app --host 127.0.0.1 --port 8000[0m
+
+Jul 17 21:54:43 bljhupaepg systemd[1]: Started referral-bot-api.service - Referral Bot FastAPI.
