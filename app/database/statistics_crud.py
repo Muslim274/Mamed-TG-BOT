@@ -182,6 +182,261 @@ class StatisticsCRUD:
         result = await session.execute(stmt)
         return result.scalars().all()
 
+    @staticmethod
+    async def get_period_sales(session: AsyncSession, start_date: datetime, end_date: datetime) -> Dict:
+        """
+        Получить продажи за период
+
+        Args:
+            session: Сессия БД
+            start_date: Начальная дата
+            end_date: Конечная дата
+
+        Returns:
+            Dict с информацией о продажах
+        """
+        start = start_date.replace(hour=0, minute=0, second=0, microsecond=0)
+        end = end_date.replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(days=1)
+
+        stmt = select(Sale).where(
+            and_(
+                Sale.created_at >= start,
+                Sale.created_at < end
+            )
+        )
+        result = await session.execute(stmt)
+        sales = result.scalars().all()
+
+        total_amount = sum(sale.amount for sale in sales)
+        total_commission = sum(sale.commission_amount for sale in sales)
+
+        return {
+            "count": len(sales),
+            "total_amount": total_amount,
+            "total_commission": total_commission,
+            "sales": sales
+        }
+
+    @staticmethod
+    async def get_period_buyers(session: AsyncSession, start_date: datetime, end_date: datetime) -> List[Dict]:
+        """
+        Получить список покупателей за период
+
+        Args:
+            session: Сессия БД
+            start_date: Начальная дата
+            end_date: Конечная дата
+
+        Returns:
+            List с информацией о покупателях
+        """
+        start = start_date.replace(hour=0, minute=0, second=0, microsecond=0)
+        end = end_date.replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(days=1)
+
+        stmt = select(User, Payment).join(
+            Payment, User.id == Payment.user_id
+        ).where(
+            and_(
+                Payment.paid_at >= start,
+                Payment.paid_at < end,
+                Payment.status == "paid"
+            )
+        )
+
+        result = await session.execute(stmt)
+        buyers_data = result.all()
+
+        buyers = []
+        for user, payment in buyers_data:
+            buyers.append({
+                "user_id": user.id,
+                "telegram_id": user.telegram_id,
+                "username": user.username,
+                "full_name": user.full_name,
+                "amount": payment.amount,
+                "purchased_at": payment.paid_at,
+                "product": "Партнерская программа"
+            })
+
+        return buyers
+
+    @staticmethod
+    async def get_period_leads(session: AsyncSession, start_date: datetime, end_date: datetime) -> List[User]:
+        """
+        Получить новых лидов за период
+
+        Args:
+            session: Сессия БД
+            start_date: Начальная дата
+            end_date: Конечная дата
+
+        Returns:
+            List пользователей
+        """
+        start = start_date.replace(hour=0, minute=0, second=0, microsecond=0)
+        end = end_date.replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(days=1)
+
+        stmt = select(User).where(
+            and_(
+                User.created_at >= start,
+                User.created_at < end
+            )
+        )
+
+        result = await session.execute(stmt)
+        return result.scalars().all()
+
+    @staticmethod
+    async def get_period_partners(session: AsyncSession, start_date: datetime, end_date: datetime) -> List[User]:
+        """
+        Получить новых партнеров за период
+
+        Args:
+            session: Сессия БД
+            start_date: Начальная дата
+            end_date: Конечная дата
+
+        Returns:
+            List пользователей
+        """
+        start = start_date.replace(hour=0, minute=0, second=0, microsecond=0)
+        end = end_date.replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(days=1)
+
+        stmt = select(User).where(
+            and_(
+                User.stage_completed_at >= start,
+                User.stage_completed_at < end,
+                User.onboarding_stage == OnboardingStage.COMPLETED
+            )
+        )
+
+        result = await session.execute(stmt)
+        return result.scalars().all()
+
+    @staticmethod
+    async def get_period_partners_without_team(session: AsyncSession, start_date: datetime, end_date: datetime) -> List[User]:
+        """
+        Получить партнеров без команды за период
+
+        Args:
+            session: Сессия БД
+            start_date: Начальная дата
+            end_date: Конечная дата
+
+        Returns:
+            List пользователей
+        """
+        start = start_date.replace(hour=0, minute=0, second=0, microsecond=0)
+        end = end_date.replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(days=1)
+
+        stmt = select(User).where(
+            and_(
+                User.payment_completed == True,
+                User.onboarding_stage != OnboardingStage.COMPLETED,
+                User.stage_payment_ok_at >= start,
+                User.stage_payment_ok_at < end
+            )
+        )
+
+        result = await session.execute(stmt)
+        return result.scalars().all()
+
+    @staticmethod
+    async def get_all_time_sales(session: AsyncSession) -> Dict:
+        """
+        Получить все продажи за всё время
+
+        Returns:
+            Dict с информацией о продажах
+        """
+        stmt = select(Sale)
+        result = await session.execute(stmt)
+        sales = result.scalars().all()
+
+        total_amount = sum(sale.amount for sale in sales)
+        total_commission = sum(sale.commission_amount for sale in sales)
+
+        return {
+            "count": len(sales),
+            "total_amount": total_amount,
+            "total_commission": total_commission,
+            "sales": sales
+        }
+
+    @staticmethod
+    async def get_all_time_buyers(session: AsyncSession) -> List[Dict]:
+        """
+        Получить всех покупателей за всё время
+
+        Returns:
+            List с информацией о покупателях
+        """
+        stmt = select(User, Payment).join(
+            Payment, User.id == Payment.user_id
+        ).where(Payment.status == "paid")
+
+        result = await session.execute(stmt)
+        buyers_data = result.all()
+
+        buyers = []
+        for user, payment in buyers_data:
+            buyers.append({
+                "user_id": user.id,
+                "telegram_id": user.telegram_id,
+                "username": user.username,
+                "full_name": user.full_name,
+                "amount": payment.amount,
+                "purchased_at": payment.paid_at,
+                "product": "Партнерская программа"
+            })
+
+        return buyers
+
+    @staticmethod
+    async def get_all_time_leads(session: AsyncSession) -> List[User]:
+        """
+        Получить всех лидов за всё время
+
+        Returns:
+            List пользователей
+        """
+        stmt = select(User)
+        result = await session.execute(stmt)
+        return result.scalars().all()
+
+    @staticmethod
+    async def get_all_time_partners(session: AsyncSession) -> List[User]:
+        """
+        Получить всех партнеров за всё время
+
+        Returns:
+            List пользователей
+        """
+        stmt = select(User).where(
+            User.onboarding_stage == OnboardingStage.COMPLETED
+        )
+
+        result = await session.execute(stmt)
+        return result.scalars().all()
+
+    @staticmethod
+    async def get_all_time_partners_without_team(session: AsyncSession) -> List[User]:
+        """
+        Получить всех партнеров без команды за всё время
+
+        Returns:
+            List пользователей
+        """
+        stmt = select(User).where(
+            and_(
+                User.payment_completed == True,
+                User.onboarding_stage != OnboardingStage.COMPLETED
+            )
+        )
+
+        result = await session.execute(stmt)
+        return result.scalars().all()
+
 
 class UserSegmentCRUD:
     """CRUD для сегментации пользователей"""
