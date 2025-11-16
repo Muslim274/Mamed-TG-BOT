@@ -1,0 +1,19 @@
+[Unit]
+Description=Telegram Referral Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/bot_deploy
+Environment="PATH=/root/bot_deploy/venv/bin"
+ExecStart=/root/bot_deploy/venv/bin/python -m app.bot
+Restart=always
+RestartSec=10
+
+# Logging
+StandardOutput=append:/root/bot_deploy/bot.log
+StandardError=append:/root/bot_deploy/bot_error.log
+
+[Install]
+WantedBy=multi-user.target

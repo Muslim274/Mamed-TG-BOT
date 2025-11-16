@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(nul)",
+      "Bash(python -m app.bot:*)",
+      "Bash(python -c:*)",
+      "Bash(taskkill:*)",
+      "Bash(python -m py_compile:*)",
+      "Bash(python test_document_send.py:*)",
+      "Bash(findstr:*)",
+      "Bash(rm:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
